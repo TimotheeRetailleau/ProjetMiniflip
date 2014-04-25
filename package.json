@@ -1,0 +1,19 @@
+{
+  "name": "ProjetMiniflip",
+  "version": "0.0.0",
+  "description": "ProjetMiniflip\r ==============",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TimotheeRetailleau/ProjetMiniflip"
+  },
+  "author": "TimotheeRetailleau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TimotheeRetailleau/ProjetMiniflip/issues"
+  },
+  "homepage": "https://github.com/TimotheeRetailleau/ProjetMiniflip"
+}
