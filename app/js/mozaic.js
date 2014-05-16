@@ -1,5 +1,5 @@
 (function(){
-	var container = document.querySelector('.container');
+	var container = $document.querySelector('.container');
 	var pckry = new Packery( container, {
 		itemSelector: '.item',
 		gutter: 10

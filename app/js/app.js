@@ -12,6 +12,7 @@ angular.module('myApp', [
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/home', {templateUrl: 'partials/home.html', controller: 'HomeCtrl'});
-  $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'TwitterCtrl'});
+  $routeProvider.when('/mozaic', {templateUrl: 'partials/mozaic.html', controller: 'TwitterCtrl'});
+  $routeProvider.when('/tweet', {templateUrl: 'partials/tweet.html', controller='TwitterCtrl'});
   $routeProvider.otherwise({redirectTo: '/home'});
 }]);

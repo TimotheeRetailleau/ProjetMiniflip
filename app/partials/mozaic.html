@@ -1,0 +1,6 @@
+<div>
+	<h1>{{searchTerm}}</h1>
+	<div id="container" ng-repeat "tweet in twitterResults">
+		<div class="item" ng-href='#/partials/tweet' ng-click='selectTweet({{$index}})'>{{tweet.text}}</div>
+	</div>
+</div>

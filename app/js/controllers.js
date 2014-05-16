@@ -10,9 +10,10 @@ angular.module('myApp.controllers', ['ngResource'])
 		}
   }])
   .controller('TwitterCtrl', ['$scope','$resource',function($scope,$resource) {
+	  $scope.searchTerm = "#"+"angular"; //à remplacer par le terme recherche via le service
 	  $scope.twitter = $resource('https://api.twitter.com/1.1/search/:action',
                 {action: 'tweets.json',
-					q: angular,
+					q: $scope.searchTerm,
                     count: 10,
                 },
                 {
@@ -21,6 +22,9 @@ angular.module('myApp.controllers', ['ngResource'])
 	  $scope.doSearch = function(){
 		  $scope.twitterResult = $scope.twitter.get();
 		};
+	  $scope.selectTweet(tweetNumber){
+		  $scope.selectedTweet=tweetNumber;
+		  }
 
 	}]);
 	  
